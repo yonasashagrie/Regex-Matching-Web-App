@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000030;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea, input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regex Tester</h1>
+        <form action="/results" method="post">
+            <label for="test_string">Test String:</label>
+            <textarea id="test_string" name="test_string" rows="4" cols="50" placeholder="Enter your test string..."></textarea><br>
+            <label for="regex_pattern">Regex Pattern:</label>
+            <input type="text" id="regex_pattern" name="regex_pattern" placeholder="Enter your regex pattern..."><br><br>
+            <input type="submit" value="Submit">
+            
+        </form>
+        <form action="/validate_email" method="post">
+            <label for="email">Check Email validate:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email...">
+            <input type="submit" value="Validate">
+        </form>
+    </div>
+    
+    <div style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.5); text-align: center; padding: 20px 0; color: #000; font-size: 18px; font-style: italic; filter: blur(0.4px); z-index: -1;">
+        <marquee behavior="scroll" scrollamount="2">@Yonas's Regex app</marquee>
+    </div>
+</body>
+</html>
