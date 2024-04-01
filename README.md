@@ -7,15 +7,24 @@ Additionally, the application provides a basic email validation feature, where u
 
 ## File Structure
 app.py: Contains the Flask application code with routes for rendering templates and processing form submissions.
+
 templates/: Directory containing HTML templates used by the application.
+
 index.html: Template for the homepage.
+
 results.html: Template for displaying regex pattern matching results.
+
 validate_email.html: Template for displaying email validation results.
+
 requirements.txt: File listing the Python dependencies required by the application.
-Dependencies
+
+## Dependencies
 ### The application requires the following Python packages:
 
 Flask: A lightweight WSGI web application framework.
+
 Jinja2: A modern and designer-friendly templating engine for Python.
+
 Werkzeug: A comprehensive WSGI web application library.
+
 These dependencies are listed in the requirements.txt file.
